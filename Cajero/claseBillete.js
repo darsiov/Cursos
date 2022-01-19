@@ -4,7 +4,5 @@ class Billete
     {
         this.valor = v;
         this.cantidad = c;
-        this.imagen = new Image();
-        this.imagen.src = imagenes[this.valor];
     } 
 }

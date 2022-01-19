@@ -1,12 +1,3 @@
-class Billete 
-{ 
-    constructor(v , c)
-    {
-        this.valor = v;
-        this.cantidad = c;
-    }
-}
-
 function entregarDinero()
 {
     var t =  document.getElementById("dinero");
@@ -28,9 +19,9 @@ function entregarDinero()
             dinero -= (bi.valor * papeles);
         }
     }
-    if (dinero > 0)
+    if (dinero < 0)
     {
-        r.innerHTML = "No hay suficiente dinero D:" + "<br/>";
+        r.innerHTML = 'No hay suficiente dinero D:" + "<br/>';
     }
     else
     {
@@ -39,6 +30,7 @@ function entregarDinero()
             if (e.cantidad > 0)
             {
             r.innerHTML += e.cantidad + " billetes de $" + e.valor + "<br/>";
+            i.innerHTML += '<a href="https://imgur.com/8TE237P"><img src="https://i.imgur.com/8TE237P.png" title="source: imgur.com" width ="15%" length ="15%"/></a><br/>';
             }
         }
     }
@@ -53,6 +45,7 @@ caja.push( new Billete (5, 10) );
 var dinero = 0;
 var div = 0;
 var papeles = 0;
+var i = document.getElementById("images")
 var r = document.getElementById("resultado");
 var b = document.getElementById("extraer");
 b.addEventListener("click", entregarDinero);
