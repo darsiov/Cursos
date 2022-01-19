@@ -2,11 +2,11 @@ var vp = document.getElementById("villaplatzi");
 var papel = vp.getContext("2d");
 
 var fondo ={
-    url: "tile.png",
+    url: "https://i.postimg.cc/jSbdyXvc/tile.webp",
     cargaOK: false
 };
 var vaca ={
-    url: "vaca.png",
+    url: "https://i.imgur.com/ELFyyz8.png",
     cargaOK: false
 };
 var teclas ={
