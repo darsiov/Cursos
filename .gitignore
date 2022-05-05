@@ -1,3 +1,4 @@
+express/
+arduino/arduinode/node_modules 
+*.json
 *.png
-/express
-/arduino/arduinode/node_modules *.json
