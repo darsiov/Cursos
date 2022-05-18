@@ -1,4 +1,4 @@
-var numeros = 10000;  
+var numeros = 1000;  
 for(var i = 1; i <= numeros; i++)
 {
     divisible = false;
